@@ -1,3 +1,6 @@
 rise
 spacy
 Pillow
+numpy
+matplotlib
+pydub
