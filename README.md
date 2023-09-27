@@ -17,19 +17,19 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fintroduction.ipynb) [introduction](notebooks-html/introduction.html)
     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-1.ipynb) [seance 1](notebooks-html/seance-1.html)
     
-    ~~- Exercices~~
-
-    ~~En utilisant le package Pydub et sa documentation :~~
-
-      ~~1. Afficher les paramètres d’encodage de notre fichier~~
-
-      ~~2. Extraire les 10 premières secondes de notre fichier son et les écouter~~
-
-      ~~3. Extraire les 20 dernières secondes et les exporter en wav~~
-    
-      ~~Vous me rendez un script (un fichier `exo-seance-1.py`)~~
 
  - 27/09/2023 : 10h30-12h30 CESR N. Destouches
+     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-2.ipynb) [seance 2](notebooks-html/seance-2.html)
+     - Exercices sur votre fichier audio (electric_cello.wav sinon)
+
+        En utilisant le package Pydub et sa documentation :
+        1. Amplifier de 12db les 6 premières secondes. Exporter le résultat dans un fichier wav
+        2. Détecter les silences dans votre fichier. Afficher sur le nombre de silences et pour chacun les estampilles temporelles et la durée
+        3. Construire un fichier wav en stéréo avec du contenu différent dans les canaux gauche et droite
+
+        Vous me rendez un script (un fichier *.py) par question sur Celene.
+      
+
  - 11/10/2023 : 9h30-11h30 FR15
  - 08/11/2023 : 9h-12h CESR salle Margolin
  - 15/11/2023 : 9h-12h CESR salle Margolin
