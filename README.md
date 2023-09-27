@@ -25,7 +25,6 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
         En utilisant le package Pydub et sa documentation :
         1. Amplifier de 12db les 6 premières secondes. Exporter le résultat dans un fichier wav
         2. Détecter les silences dans votre fichier. Afficher sur le nombre de silences et pour chacun les estampilles temporelles et la durée
-        3. Construire un fichier wav en stéréo avec du contenu différent dans les canaux gauche et droite
 
         Vous me rendez un script (un fichier *.py) par question sur Celene.
       
