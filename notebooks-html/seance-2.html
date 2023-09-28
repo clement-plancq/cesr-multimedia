@@ -14591,8 +14591,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Évidemment pour pouvoir utiliser <code>pydub</code> il faut l’avoir installé.</p>
-<p><code>python3 -m pip install pydub</code> ou (dans pyzo) <code>conda install pydub</code></p>
+<p>Évidemment pour pouvoir utiliser <code>pydub</code> il faut l’avoir installé au préalable.</p>
+<p><code>python3 -m pip install pydub</code> ou <code>conda install pydub</code></p>
 
 </div>
 </div>
@@ -14604,8 +14604,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Comme vous l’avez vu, un fichier son est constitué d’un ensemble d’échantillons. Pour un fichier wav PCM on aura une suite d’octets constituée d’un en-tête suivi pour les échantillons.</p>
-<p>Les classes et les fonctions de <code>pydub</code> vont vous permettre de manipuler simplement les données contenues dans un fichier son. Dans différents formats mais pour ce TP nous nous en tiendrons au format wav PCM.</p>
+<p>Comme vous l’avez vu, un fichier son est constitué d’un ensemble d’échantillons. Pour un fichier wav PCM on aura une suite d’octets composée d’un en-tête suivi pour les échantillons.</p>
+<p>Les classes et les fonctions de <code>pydub</code> vont vous permettre de manipuler simplement les données contenues dans un fichier son. Dans différents formats (wav, mp3, ogg, …) mais pour ce TP nous nous en tiendrons au format wav PCM.</p>
 
 </div>
 </div>
@@ -14639,12 +14639,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Afficher les paramètres d’encodage de notre fichier</span>
@@ -14663,29 +14663,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Nombre de canaux : 2
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14693,17 +14670,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Extraire-les-10%E2%80%AFpremi%C3%A8re-secondes-et-les-%C3%A9couter">2. Extraire les 10&#8239;premi&#232;re secondes et les &#233;couter<a class="anchor-link" href="#2.-Extraire-les-10%E2%80%AFpremi%C3%A8re-secondes-et-les-%C3%A9couter">&#182;</a></h3><p><code>song</code> est un objet de la classe <code>AudioSegment</code>. Au vu de la <a href="http://pydub.com/">documentation</a> et du <a href="https://github.com/jiaaro/pydub/blob/master/pydub/audio_segment.py">code source</a> on comprend que <code>song</code> est un <a href="https://docs.python.org/3/glossary.html#term-iterable"><em>iterable</em></a> et une <a href="https://docs.python.org/3/glossary.html#term-sequence"><em>sequence</em></a>. On peut utiliser un <a href="https://docs.python.org/3/glossary.html#term-slice"><em>slice</em></a> pour le découper.</p>
+<h3 id="2.-Extraire-les-10%E2%80%AFpremi%C3%A8res-secondes-et-les-%C3%A9couter">2. Extraire les 10&#8239;premi&#232;res secondes et les &#233;couter<a class="anchor-link" href="#2.-Extraire-les-10%E2%80%AFpremi%C3%A8res-secondes-et-les-%C3%A9couter">&#182;</a></h3><p><code>song</code> est un objet de la classe <code>AudioSegment</code>. Au vu de la <a href="http://pydub.com/">documentation</a> et du <a href="https://github.com/jiaaro/pydub/blob/master/pydub/audio_segment.py">code source</a> on comprend que <code>song</code> est un <a href="https://docs.python.org/3/glossary.html#term-iterable"><em>iterable</em></a> et une <a href="https://docs.python.org/3/glossary.html#term-sequence"><em>sequence</em></a>. On peut utiliser un <a href="https://docs.python.org/3/glossary.html#term-slice"><em>slice</em></a> pour le découper.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Extraire les 10 premières secondes et les écouter</span>
@@ -14722,29 +14699,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10000
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14753,17 +14707,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="3.-Extraire-les-20-derni%C3%A8res-secondes-et-les-exporter-en-wav">3. Extraire les 20 derni&#232;res secondes et les exporter en wav<a class="anchor-link" href="#3.-Extraire-les-20-derni%C3%A8res-secondes-et-les-exporter-en-wav">&#182;</a></h3><p>Là aussi la documentation nous donne les réponses ou presque. Encore une fois on découpe la suite d’échantillons et <code>pydub</code> nous permet de générer un fichier wav avec notre morceau découpé.
-Cela signifie que la fonction <code>export</code> ajoute l’en-tête wav avec les infos nécessaires à notre découpe puis crée un fichier à l’emplacement désiré.</p>
+La fonction <code>export</code> ajoute l’en-tête wav avec les infos nécessaires à notre découpe puis crée un fichier à l’emplacement désiré.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydub</span> <span class="kn">import</span> <span class="n">AudioSegment</span>
@@ -14779,31 +14733,6 @@ Cela signifie que la fonction <code>export</code> ajoute l’en-tête wav avec l
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;_io.BufferedRandom name=&#39;../audio/electric_cello_last20s.wav&#39;&gt;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14812,7 +14741,7 @@ Cela signifie que la fonction <code>export</code> ajoute l’en-tête wav avec l
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Exploration-de-pydub">Exploration de <code>pydub</code><a class="anchor-link" href="#Exploration-de-pydub">&#182;</a></h2><p>Pydub est un package de haut niveau qui a l’avantage d’être simple à utiliser.<br>
-Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.markdown#api-documentation">documentation</a>, une partie des fonctions ne sont pas dans la doc. Il faut donc explorer le code source pour apprendre à utiliser toutes les fonctions.</p>
+Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.markdown#api-documentation">documentation</a>, une partie des fonctions ne sont pas signalées dans la doc. Il faut donc aussi explorer le code source pour apprendre à utiliser toutes les fonctions.</p>
 
 </div>
 </div>
@@ -14829,12 +14758,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">silence</span> <span class="o">=</span> <span class="n">AudioSegment</span><span class="o">.</span><span class="n">silent</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span> <span class="n">frame_rate</span><span class="o">=</span><span class="mi">48000</span><span class="p">)</span>
@@ -14845,31 +14774,6 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>5000</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14884,12 +14788,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">silence_10</span> <span class="o">=</span> <span class="n">silence</span> <span class="o">+</span> <span class="n">first_10_seconds</span>
@@ -14902,31 +14806,19 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>15000</pre>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>La concaténation est réalisée grâce à l’opérateur <code>+</code> qui est déjà utilisé pour concaténer des chaînes de caractères (<code>str</code>, voir doc <a href="https://realpython.com/python-string-split-concatenate-join/#concatenating-and-joining-strings">ici</a> par exemple).<br>
+Pour que la concaténation avec <code>+</code> fonctionne, pydub surcharge la fonction <code>__add__</code> (voir le code source <a href="https://github.com/jiaaro/pydub/blob/996cec42e9621701edb83354232b2c0ca0121560/pydub/audio_segment.py#L362">ici</a>)</p>
 
 </div>
-
 </div>
-
 </div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14939,12 +14831,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># extraire les 2 premières secondes dans une variable two_seconds</span>
@@ -14964,54 +14856,18 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Ici aussi pydub ajoute un comportement à l’opérateur <code>+</code>. En fonction du type des opérandes, <code>+</code> appliquera une concaténation ou un gain de volume.</p>
 
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Input #0, wav, from &#39;/tmp/tmpxky8pnkp.wav&#39;:   0KB sq=    0B f=0/0   
-  Duration: 00:00:06.00, bitrate: 1536 kb/s
-  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
-   5.80 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
 </div>
 </div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
 </div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>   5.92 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15024,12 +14880,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># exemple pour un fade_in de 2,5 secondes sur les 5 premières secondes</span>
@@ -15040,43 +14896,6 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Input #0, wav, from &#39;/tmp/tmpqhpgzb56.wav&#39;:   0KB sq=    0B f=0/0   
-  Duration: 00:00:05.00, bitrate: 1536 kb/s
-  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
-   4.96 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15091,12 +14910,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">play</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">reverse</span><span class="p">())</span>
@@ -15105,54 +14924,6 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Input #0, wav, from &#39;/tmp/tmp4hxughj5.wav&#39;:   0KB sq=    0B f=0/0   
-  Duration: 00:00:05.00, bitrate: 1536 kb/s
-  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
-   4.92 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>   4.95 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15167,12 +14938,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">song</span><span class="o">.</span><span class="n">get_array_of_samples</span><span class="p">()</span>
@@ -15183,31 +14954,6 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array.array</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15222,12 +14968,12 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># on doit générer deux objets AudioSegment sur un seul canal</span>
@@ -15249,43 +14995,6 @@ Mais comme le dit la <a href="https://github.com/jiaaro/pydub/blob/master/API.ma
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Input #0, wav, from &#39;/tmp/tmpmxoe0ul6.wav&#39;:   0KB sq=    0B f=0/0   
-  Duration: 00:00:24.38, bitrate: 1536 kb/s
-  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
-  24.32 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15300,12 +15009,12 @@ Cette fonction fait partie du module <code>silence</code> qu’il faudra ajouter
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydub.silence</span> <span class="kn">import</span> <span class="n">detect_silence</span>
@@ -15328,29 +15037,36 @@ Cette fonction fait partie du module <code>silence</code> qu’il faudra ajouter
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="7.-Overlay">7. <em>Overlay</em><a class="anchor-link" href="#7.-Overlay">&#182;</a></h3><p>L’<em>overlay</em> permet d’ajouter un segment audio sur un segment audio, comme une surcouche.</p>
+<p>Vous pouvez utiliser la fonction <code>overlay</code>, elle est commentée <a href="https://github.com/jiaaro/pydub/blob/master/API.markdown#audiosegmentoverlay">ici</a></p>
 
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>le premier silence dure 2 secondes
-début : 0 ms
-fin : 1902 ms
-</pre>
 </div>
 </div>
-
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ici on ajoute une surcouche avec les 2 premières secondes du morceau</span>
+<span class="c1"># l’overlay commence à 2 secondes et est répété en boucle</span>
+<span class="n">overlayed</span> <span class="o">=</span> <span class="n">song</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span><span class="n">song</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span> <span class="n">position</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">play</span><span class="p">(</span><span class="n">overlayed</span><span class="p">)</span>
+</pre></div>
 
+     </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -15360,18 +15076,9 @@ fin : 1902 ms
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="7.-Overlay">7. <em>Overlay</em><a class="anchor-link" href="#7.-Overlay">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="8.-Quel-algorithme-pour-une-fonction-de-delay-?">8. Quel algorithme pour une fonction de <em>delay</em> ?<a class="anchor-link" href="#8.-Quel-algorithme-pour-une-fonction-de-delay-?">&#182;</a></h3>
+<h3 id="8.-Quel-algorithme-pour-une-fonction-de-delay-?">8. Quel algorithme pour une fonction de <em>delay</em> ?<a class="anchor-link" href="#8.-Quel-algorithme-pour-une-fonction-de-delay-?">&#182;</a></h3><p>Le <em>delay</em> est un effet très utilisé dans la musique populaire et la musique concrète. Par exemple dans <a href="https://github.com/jiaaro/pydub/blob/master/API.markdown#audiosegmentoverlay">Run Like Hell</a> des Pink Floyd, plein de titres de U2 (<a href="https://youtu.be/LHcP4MWABGY?si=7cB4eGOVhGB80nR9&amp;t=14">Pride</a> par exemple) ou encore dans le dub (<a href="https://youtu.be/vQXoxh0wwKc?si=yRmN8t8ljeGG7Xbb">exemple</a> avec un titre de Groundation).</p>
+<p>C’est un effet d’écho où un extrait du signal est répété plusieurs fois.</p>
+
 </div>
 </div>
 </div>
