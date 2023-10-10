@@ -14639,12 +14639,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Afficher les paramètres d’encodage de notre fichier</span>
@@ -14663,6 +14663,32 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>nombre de canaux : 2, 
+fréquence d’échantillonage : 48000, 
+résolution de chaque échantillon : 2, 
+nombre de frames : 1170432.0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14675,12 +14701,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Extraire les 10 premières secondes et les écouter</span>
@@ -14697,6 +14723,29 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>10000
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14968,12 +15017,12 @@ Pour que la concaténation avec <code>+</code> fonctionne, pydub surcharge la fo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># on doit générer deux objets AudioSegment sur un seul canal</span>
@@ -14993,6 +15042,54 @@ Pour que la concaténation avec <code>+</code> fonctionne, pydub surcharge la fo
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>Input #0, wav, from &#39;/tmp/tmpk_oxstic.wav&#39;:   0KB sq=    0B f=0/0   
+  Duration: 00:00:24.38, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+  24.23 M-A: -0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>  24.32 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15050,12 +15147,12 @@ Cette fonction fait partie du module <code>silence</code> qu’il faudra ajouter
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ici on ajoute une surcouche avec les 2 premières secondes du morceau</span>
@@ -15069,6 +15166,43 @@ Cette fonction fait partie du module <code>silence</code> qu’il faudra ajouter
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>Input #0, wav, from &#39;/tmp/tmp01c2w7ai.wav&#39;:   0KB sq=    0B f=0/0   
+  Duration: 00:00:24.38, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+  24.34 M-A:  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   </pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15076,7 +15210,7 @@ Cette fonction fait partie du module <code>silence</code> qu’il faudra ajouter
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="8.-Quel-algorithme-pour-une-fonction-de-delay-?">8. Quel algorithme pour une fonction de <em>delay</em> ?<a class="anchor-link" href="#8.-Quel-algorithme-pour-une-fonction-de-delay-?">&#182;</a></h3><p>Le <em>delay</em> est un effet très utilisé dans la musique populaire et la musique concrète. Par exemple dans <a href="https://github.com/jiaaro/pydub/blob/master/API.markdown#audiosegmentoverlay">Run Like Hell</a> des Pink Floyd, plein de titres de U2 (<a href="https://youtu.be/LHcP4MWABGY?si=7cB4eGOVhGB80nR9&amp;t=14">Pride</a> par exemple) ou encore dans le dub (<a href="https://youtu.be/vQXoxh0wwKc?si=yRmN8t8ljeGG7Xbb">exemple</a> avec un titre de Groundation).</p>
+<h3 id="8.-Quel-algorithme-pour-une-fonction-de-delay-?">8. Quel algorithme pour une fonction de <em>delay</em> ?<a class="anchor-link" href="#8.-Quel-algorithme-pour-une-fonction-de-delay-?">&#182;</a></h3><p>Le <em>delay</em> est un effet très utilisé dans la musique populaire et la musique concrète. Par exemple dans <a href="https://youtu.be/j2s8yGMEbSs?si=-lKBfNnR7vuAI432">Run Like Hell</a> des Pink Floyd, plein de titres de U2 (<a href="https://youtu.be/LHcP4MWABGY?si=7cB4eGOVhGB80nR9&amp;t=14">Pride</a> par exemple) ou encore dans le dub (<a href="https://youtu.be/vQXoxh0wwKc?si=yRmN8t8ljeGG7Xbb">exemple</a> avec un titre de Groundation).</p>
 <p>C’est un effet d’écho où un extrait du signal est répété plusieurs fois.</p>
 
 </div>
