@@ -2,6 +2,6 @@ rise
 spacy
 Pillow
 numpy
-matplotlib
+matplotlib==3.7.0
 pydub
 librosa
