@@ -30,7 +30,7 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
       
 
  - 11/10/2023 : 9h30-11h30 FR15
-     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-3.ipynb) [seance 2](notebooks-html/seance-3.html)
+     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-3.ipynb) [seance 3](notebooks-html/seance-3.html)
      - Exercice sur la gamme de Do mineur. À l’aide de la documentation, obtenez les notes de la gamme de Do mineur (Cmin),
      obtenez les valeurs des notes en Hz et représentez cette gamme sur un spectrogramme (à l’aide de `ibrosa.feature.chroma_cqt`)
 
