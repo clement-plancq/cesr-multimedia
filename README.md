@@ -36,7 +36,8 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
 
  - 08/11/2023 : 9h-12h CESR salle Margolin
      - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-4.ipynb) [seance 4](notebooks-html/seance-4.html)
-     - Exercice avec Pillow. Écrivez un script qui à partir d’un lot de fichiers .jpg produit des vignettes de taille 120 x 120, en niveaux de gris, au formant png
+     - Exercice avec Pillow. Écrivez un script qui à partir d’un lot de fichiers .jpg produit des vignettes de taille 120 x 120, en niveaux de gris, au format png.  
+     Vous pouvez prendre par exemple les fichiers du dossier img sur le dépôt https://github.com/clement-plancq/cesr-multimedia qui se terminent par '1130x400.jpg'. Pensez à utiliser le module glob (https://docs.python.org/3/library/glob.html)
 
  - 15/11/2023 : 9h-12h CESR salle Margolin
  - 29/11/2023 : 9h-12h CESR N. Destouches
