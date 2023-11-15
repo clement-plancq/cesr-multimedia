@@ -40,6 +40,8 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
      Vous pouvez prendre par exemple les fichiers du dossier img sur le dépôt https://github.com/clement-plancq/cesr-multimedia qui se terminent par '1130x400.jpg'. Pensez à utiliser le module glob (https://docs.python.org/3/library/glob.html)
 
  - 15/11/2023 : 9h-12h CESR salle Margolin
+     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-5.ipynb) [seance 5](notebooks-html/seance-5.html)
+
  - 29/11/2023 : 9h-12h CESR N. Destouches
  - 06/12/2023 : 9h-12h CESR salle Saint-Martin
  - 13/12/2023 : 9h-11h CESR salle Margolin
