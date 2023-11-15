@@ -41,6 +41,8 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
 
  - 15/11/2023 : 9h-12h CESR salle Margolin
      - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-5.ipynb) [seance 5](notebooks-html/seance-5.html)
+     - Exercice avec Pillow. Ajoutez un filigrane ('fine.jpg' ou autre chose si vous voulez) en bas à droite de chacune des trois images suivantes : CPR_1130x400.jpg, bunny.jpg, plane_1.jpg (les images sont sur le dépôt github)
+
 
  - 29/11/2023 : 9h-12h CESR N. Destouches
  - 06/12/2023 : 9h-12h CESR salle Saint-Martin
