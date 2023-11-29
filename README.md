@@ -44,6 +44,8 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
 
  - 29/11/2023 : 9h-12h CESR N. Destouches
      - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bxdVxK7Gs0aQxfXZEqtpBtCltPDCCuyD?usp=sharing) seance 6 : Traitement d’images (3), détection d’objets
+     - Exercice avec ultralytics. Sur l’image de votre choix, faîtes une détection d’objet et filtrez les résultats pour n’avoir que ceux qui 1. ont un score de confiance supérieure à 0.7 et 2. ont une catégorie 'Personne' ou animal (ou fruit comme vous préférez)
+
  - 06/12/2023 : 9h-12h CESR salle Saint-Martin
      - seance 7 : IIIF
  - 13/12/2023 : 9h-11h CESR salle Margolin
