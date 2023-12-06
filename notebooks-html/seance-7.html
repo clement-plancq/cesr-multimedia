@@ -14703,7 +14703,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Comparaison-d%E2%80%99images">Comparaison d&#8217;images<a class="anchor-link" href="#Comparaison-d%E2%80%99images">&#182;</a></h2><p>(<a href="https://www.theleidencollection.com/viewer/david-and-uriah/)[https://www.theleidencollection.com/viewer/david-and-uriah/">https://www.theleidencollection.com/viewer/david-and-uriah/)[https://www.theleidencollection.com/viewer/david-and-uriah/</a>]</p>
+<h2 id="Comparaison-d%E2%80%99images">Comparaison d&#8217;images<a class="anchor-link" href="#Comparaison-d%E2%80%99images">&#182;</a></h2><p><a href="https://www.theleidencollection.com/viewer/david-and-uriah/">https://www.theleidencollection.com/viewer/david-and-uriah/</a></p>
 
 </div>
 </div>
@@ -14959,6 +14959,18 @@ format: <code>jpg</code><br>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="https://ids.lib.harvard.edu/ids/iiif/25286607/full/pct:50/180/gray.jpg" alt=""></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Information">Information<a class="anchor-link" href="#Information">&#182;</a></h2><p><code>{scheme}://{server}{/prefix}/{identifier}/info.json</code></p>
 <p>Donne des informations sur l’image (taille notamment) et sur le serveur (formats, version de l’API supportée, _)</p>
 <p>Voir <a href="https://iiif.io/api/image/3.0/#5-image-information">https://iiif.io/api/image/3.0/#5-image-information</a></p>
@@ -15019,7 +15031,7 @@ Léger, peu verbeux, beaucoup utilisé par les APIs</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -15027,8 +15039,9 @@ Léger, peu verbeux, beaucoup utilisé par les APIs</p>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://ids.lib.harvard.edu/ids/iiif/25286607/info.json&quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
     <span class="n">info</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="n">formats</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;formats&#39;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">formats</span><span class="p">))</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;width&#39;</span><span class="p">]</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Largeur : </span><span class="si">{</span><span class="n">width</span><span class="si">}</span><span class="s2">, longueur : </span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15050,7 +15063,7 @@ Léger, peu verbeux, beaucoup utilisé par les APIs</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>jpg, tif, gif, png
+<pre>Largeur : 4132, longueur : 8176
 </pre>
 </div>
 </div>
@@ -15125,11 +15138,46 @@ Voir dans <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;mani
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Pour votre projet vous devrez enrichir les métadonnées d’un manifest</p>
+<p>iiPour votre projet vous devrez enrichir les métadonnées d’un manifest</p>
 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://iiif.io/api/cookbook/recipe/0029-metadata-anywhere/manifest.json&quot;</span><span class="p">)</span>
+<span class="n">manifest</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="n">manifest</span><span class="p">[</span><span class="s1">&#39;metadata&#39;</span><span class="p">]</span>
+<span class="n">description</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;en&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Detected objects&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;fr&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Objets détectés&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;en&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rabbit, zebra, pot&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;fr&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;lapin, zèbre, casserole&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">metadata</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">description</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;manifest_rabbit.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">manifest</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15137,7 +15185,8 @@ Voir dans <a href="https://uv-v3.netlify.app/#?c=&amp;m=&amp;s=&amp;cv=&amp;mani
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Sources">Sources<a class="anchor-link" href="#Sources">&#182;</a></h2><p>Ce notebook s’appuie sur le contenu et les références des ressources suivantes :</p>
+<p>m## Sources</p>
+<p>Ce notebook s’appuie sur le contenu et les références des ressources suivantes :</p>
 <ul>
 <li><a href="https://projet.biblissima.fr/fr/introduction-protocoles-iiif-formation-enssib-2019">Introduction aux protocoles IIIF. Formation Enssib (Régis Robineau, 23 janvier 2019)</a></li>
 <li><a href="https://training.iiif.io/iiif-online-workshop/">IIIF Online workshop </a></li>
