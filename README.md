@@ -5,7 +5,7 @@ Supports de cours pour le Master mention Humanités Numériques du [CESR](https:
 ## Évaluation
 
  - devoirs : 40%
- - projet : 60%
+ - projet : 60% ([voir le sujet](projet.md))
 
 Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
 
