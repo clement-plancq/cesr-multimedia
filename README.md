@@ -47,7 +47,8 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
      - Exercice avec ultralytics. Sur l’image de votre choix, faîtes une détection d’objet et filtrez les résultats pour n’avoir que ceux qui 1. ont un score de confiance supérieure à 0.7 et 2. ont une catégorie 'Personne' ou animal (ou fruit comme vous préférez)
 
  - 06/12/2023 : 9h-12h CESR salle Rapin
-     - seance 7 : IIIF
+     - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-7.ipynb) [seance 7 : IIIF](notebook-html/seance-7.html)
+     
  - 13/12/2023 : 9h-11h CESR salle Margolin
      - seance 8 : TP sur le projet
 
