@@ -15,14 +15,12 @@ Vous me remettez des *scripts* sous forme de fichiers *.py, pas des notebooks
     - Introduction [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fintroduction.ipynb) 
     - Séance 1 : premiers pas avec Pydub [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fseance-1.ipynb)
     
- - 15/11/2024 : 9h-12h salle des partitions
+ - 15/11/2024 : 9h-12h salle Rapin
 
- - 22/11/2024 : 9h-11h salle des partitions
+ - 22/11/2024 : 9h-11h salle Rapin
 
  - 29/11/2024 : 9h-12h salle Margolin
-
- - 06/12/2024 : 9h-12h salle des partitions
     
- - 11/13/2024 : 14h-17h N. Destouches
+ - 11/12/2024 : 14h-16h N. Destouches
 
- - 13/12/2025 : 14h-17h salle Saint-Martin
+ - 13/12/2024 : 14h-17h salle Rapin
