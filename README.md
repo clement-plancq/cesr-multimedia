@@ -23,6 +23,9 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
 
  - 22/11/2024 : 9h-11h salle Rapin
+   - Séance 3 : Traitement d’images 2 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement-images-2.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/clement-plancq/cesr-multimedia/blob/main/notebooks/traitement-images-2.ipynb)
+   - Exercice. Réalisez une détection de contours sur une image que vous compresserez avec 3 niveaux qualité décroissante : 75, 40 et 15
+
 
  - 29/11/2024 : 9h-12h salle Margolin
     
