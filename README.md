@@ -28,6 +28,11 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
 
  - 29/11/2024 : 9h-12h salle Margolin
+   - Traitement d’images 3  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bxdVxK7Gs0aQxfXZEqtpBtCltPDCCuyD?usp=sharing) 
+   - IIIF [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fiiif.ipynb)
+
+    - Exercice avec ultralytics. Sur l’image de votre choix, faîtes une détection d’objet et filtrez les résultats pour n’avoir que ceux qui 1. ont un score de confiance supérieure à 0.7 et 2. ont une catégorie 'Personne' ou animal (ou fruit comme vous préférez)
+ 
     
  - 11/12/2024 : 14h-16h N. Destouches
 
