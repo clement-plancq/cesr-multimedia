@@ -34,6 +34,6 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
     - Exercice avec ultralytics. Sur l’image de votre choix, faîtes une détection d’objet et filtrez les résultats pour n’avoir que ceux qui 1. ont un score de confiance supérieure à 0.7 et 2. ont une catégorie 'Personne' ou animal (ou fruit comme vous préférez)
  
     
- - 11/12/2024 : 14h-17h salle Rapin
+ - 11/12/2024 : 14h-17h FR15
 
  - 13/12/2024 : 14h-17h salle Rapin
