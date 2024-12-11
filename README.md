@@ -29,11 +29,21 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
  - 03/12/2024 : 16h-18h salle Margolin
    - Traitement d’images 3  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bxdVxK7Gs0aQxfXZEqtpBtCltPDCCuyD?usp=sharing) 
-   - IIIF [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fiiif.ipynb)
-
+   
     - Exercice avec ultralytics. Sur l’image de votre choix, faîtes une détection d’objet et filtrez les résultats pour n’avoir que ceux qui 1. ont un score de confiance supérieure à 0.7 et 2. ont une catégorie 'Personne' ou animal (ou fruit comme vous préférez)
  
-    
- - 11/12/2024 : 14h-17h FR15
+ - 11/12/2024 : 14h-17h 
+   - IIIF [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement-images-iiif.ipynb)
 
  - 13/12/2024 : 14h-17h salle Rapin
+
+ - Devoir final : 
+ 
+ Vous devrez combiner la détection d’objets et l’utilisation de l’API Image de IIF.
+
+ Vous utiliserez Google Colab et vous remettrez votre fichier `ipynb` (Fichier > Télécharger > Télécharger le fichier .ipynb)
+
+    1. Sélectionnez trois images accessibles via l’API Image de IIIF
+    2. Mettez en œuvre la détection d’objets sur ces images à l’aide de la bibliothèque Ultralytics 
+    3. Pour chaque image, relevez les coordonnées et la classe des deux objets détectés ayant les taux de confiance (*confidence score*) les plus élevés. Aidez-vous de la [documentation](https://docs.ultralytics.com/fr/modes/predict)
+    4. À l’aide des coordonnées des objets détectés et de l’API Image IIIF, pour chaque objet composez l’url qui vous permettra de l’afficher. En couleur et en niveau de gris.
