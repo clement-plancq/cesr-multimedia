@@ -39,6 +39,8 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
  - Devoir final : 
  
+ À rendre le **mercredi 8 janvier 2025** avant 23h.
+
  Vous devrez combiner la détection d’objets et l’utilisation de l’API Image de IIF.
 
  Vous utiliserez Google Colab et vous remettrez votre fichier `ipynb` (Fichier > Télécharger > Télécharger le fichier .ipynb)
