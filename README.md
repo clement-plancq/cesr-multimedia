@@ -45,7 +45,7 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
  Vous utiliserez Google Colab et vous remettrez votre fichier `ipynb` (Fichier > Télécharger > Télécharger le fichier .ipynb)
 
-    1. Sélectionnez trois images accessibles via l’API Image de IIIF
-    2. Mettez en œuvre la détection d’objets sur ces images à l’aide de la bibliothèque Ultralytics 
-    3. Pour chaque image, relevez les coordonnées et la classe des deux objets détectés ayant les taux de confiance (*confidence score*) les plus élevés. Aidez-vous de la [documentation](https://docs.ultralytics.com/fr/modes/predict)
-    4. À l’aide des coordonnées des objets détectés et de l’API Image IIIF, pour chaque objet composez l’url qui vous permettra de l’afficher. En couleur et en niveau de gris.
+  1. Sélectionnez trois images accessibles via l’API Image de IIIF (voir [https://iiif.io/guides/finding_resources/](https://iiif.io/guides/finding_resources/))
+  2. Mettez en œuvre la détection d’objets sur ces images à l’aide de la bibliothèque Ultralytics 
+  3. Pour chaque image, relevez les coordonnées et la classe des deux objets détectés ayant les taux de confiance (*confidence score*) les plus élevés. Aidez-vous de la [documentation](https://docs.ultralytics.com/fr/modes/predict)
+  4. À l’aide des coordonnées des objets détectés et de l’API Image IIIF, pour chaque objet composez l’url qui vous permettra de l’afficher. En couleur et en niveau de gris.
