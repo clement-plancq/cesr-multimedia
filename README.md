@@ -36,6 +36,7 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
    - IIIF [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement-images-iiif.ipynb)
 
  - 13/12/2024 : 14h-17h salle Rapin
+   - Traitement de données audio [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement_audio.ipynb)
 
  - Devoir final : 
  
@@ -49,3 +50,8 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
   2. Mettez en œuvre la détection d’objets sur ces images à l’aide de la bibliothèque Ultralytics 
   3. Pour chaque image, relevez les coordonnées et la classe des deux objets détectés ayant les taux de confiance (*confidence score*) les plus élevés. Aidez-vous de la [documentation](https://docs.ultralytics.com/fr/modes/predict)
   4. À l’aide des coordonnées des objets détectés et de l’API Image IIIF, pour chaque objet composez l’url qui vous permettra de l’afficher. En couleur et en niveau de gris.
+
+ Votre rendu doit être un notebook qui comportera :
+  - des explications sur votre démarche, où et comment vous trouvez les données, quelles difficultés vous avez rencontré et quelles solutions vous avez pu apporter /10
+  - du code Python, n’oubliez pas de le commenter /8
+  - la présentation des résultats /4
