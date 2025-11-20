@@ -22,7 +22,7 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
  - Lundi 03/11, 13h30-16h30, FR 16
  - Jeudi 13/11, 8h30-12h, TA 201
  - Jeudi 20/11, 13h30-16h30, salle Néricault Destouches
- - Lundi 24/11, 15h30-18h30, FR 16
+ - Lundi 24/11, 15h30-17h30, salle St-Martin
  - Lundi 01/12, 9h-12h, salle Rapin
  - Lundi 08/12, 9h-12h, salle Rapin
 
@@ -86,11 +86,11 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
 ---
 
-### 5. IIIF — Accéder et recadrer des images  
-24/11/2025 — 15h30–18h30 (FR 16)
+### 5. IIIF
+24/11/2025 — 15h30–17h30 (St-Martin)
 
 **Objectifs :**
-- Comprendre la logique des URL IIIF Image API
+- Comprendre la logique de l’API IIIF Image
 - Extraire une région d’image à partir de coordonnées
 - Combiner détection d’objet & recadrage dynamique
 
