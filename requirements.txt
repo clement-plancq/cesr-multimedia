@@ -1,6 +1,6 @@
 rise
 spacy
-Pillow==10.3.0
+Pillow==12.3.0
 numpy
 matplotlib
 pydub
