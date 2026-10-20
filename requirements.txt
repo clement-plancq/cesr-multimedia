@@ -1,4 +1,4 @@
-rise
+jupyterlab-rise
 spacy
 Pillow==10.3.0
 numpy
