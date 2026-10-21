@@ -40,8 +40,9 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 **Ressources :**  
 - Introduction  
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Fintroduction.ipynb)
-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement-images-1.ipynb)  
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/clement-plancq/cesr-multimedia/blob/main/notebooks/traitement-images-1.ipynb)
+- Traitement d’images 1__
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/clement-plancq/cesr-multimedia/HEAD?labpath=notebooks%2Ftraitement-images-1.ipynb)  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/clement-plancq/cesr-multimedia/blob/main/notebooks/traitement-images-1.ipynb)
 
 
 ---
