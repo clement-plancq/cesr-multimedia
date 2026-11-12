@@ -62,7 +62,7 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 ---
 
 ### 3 et 4. Traitement d’images 3 — Détection d’objets  
-20/11/2026 et 23/11/2026
+~~20/11/2026 et~~ 23/11/2026
 
 **Objectifs :**
 - Comprendre le fonctionnement des modèles pré-entraînés Ultralytics
@@ -106,6 +106,6 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 ---
 
 ### 7. Présentation orale du devoir final  
-07/12/2026
+07/12/2026 et 10/12/2026
 
  
