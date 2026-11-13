@@ -20,11 +20,11 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
  - Mercredi 21/10 : 13h30-16h30, salle Néricault Destouches
  - Vendredi 13/11, 9h-12h, salle Rapin
- - Vendredi 20/11, 9h-12h30, salle Margolin
  - Lundi 23/11, 9h-12h, salle Rapin
  - Lundi 30/11, 14h-17h, salle Rapin
  - Vendredi 04/12, 9h-12h, salle Rapin
  - Lundi 07/12, 14h-16h salle Rapin
+ - Jeudi 10/12, 9h-12h30 salle Margolin
 
 ## Programme des séances
 
