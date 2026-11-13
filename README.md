@@ -87,8 +87,13 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 
 ---
 
-### 6. Traitement audio — Analyse & visualisation  
+### 6. TP sur le projet
 04/12/2026
+
+---
+
+### 6. Traitement audio — Analyse & visualisation  
+07/12/2026
 
 **Objectifs :**
 - Comprendre la représentation numérique du son
@@ -106,6 +111,6 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 ---
 
 ### 7. Présentation orale du devoir final  
-07/12/2026 et 10/12/2026
+10/12/2026
 
  
