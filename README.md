@@ -70,7 +70,7 @@ Binder pour tous les supports : [![Binder](https://mybinder.org/badge_logo.svg
 - Extraire les boîtes englobantes et les scores de confiance
 
 **Ressource :**
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bxdVxK7Gs0aQxfXZEqtpBtCltPDCCuyD?usp=sharing)
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KwuCGJ32priRjsx7D5VxbujFyGnLlxD0?usp=sharing)
 
 ---
 
